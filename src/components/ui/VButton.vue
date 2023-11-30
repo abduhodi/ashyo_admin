@@ -29,10 +29,7 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
 
-const props = defineProps({
-  btn_type: String,
-  isLoading: Boolean,
-});
+const props = defineProps<{btn_type: string, isLoading: boolean}>();
 const type_style = {
   primary:
     "bg-color1 hover:bg-[#5388a8] active:bg-[#416D89] disabled:bg-[#416D89]",
@@ -41,6 +38,7 @@ const type_style = {
     "bg-green-600 hover:bg-green-400 active:bg-green-600 disabled:bg-green-300",
   info: "bg-blue-400 hover:bg-blue-400 active:bg-blue-600 disabled:bg-blue-300",
 };
+
 
 const classess = computed(() => {
   return type_style[props.btn_type];
