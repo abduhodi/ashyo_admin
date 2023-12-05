@@ -10,7 +10,7 @@
       <span
         class="w-[35px] h-[35px] flex justify-center items-center bg-white rounded-full overflow-hidden"
       >
-        <img
+        <!-- <img
           v-if="profileStore?.user?.image"
           :src="profileStore?.user?.image"
           alt="avatar"
@@ -21,7 +21,7 @@
           type="mdi"
           :path="mdiAccountOutline"
           class="text-[#002842]"
-        ></svg-icon>
+        ></svg-icon> -->
       </span>
       <span class="text-white text-[14px] font-thin"
         >{{ "Eshonov" }} {{ "Bahodir" }}</span

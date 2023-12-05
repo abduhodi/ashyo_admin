@@ -1,3 +1,4 @@
+import categories from "./categories";
 import products from "./products";
 export default {
   path: "/admin",
@@ -9,6 +10,7 @@ export default {
       name: "admin_dashboard",
       component: () => import("@/views/CategoryView.vue"),
     },
-    products
+    products,
+    categories,
   ],
 };
