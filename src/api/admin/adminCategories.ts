@@ -2,8 +2,8 @@ import axiosClient from "../apiClient";
 import { type pQuery } from "@/interfaces";
 const adminCategoriesApi = {
     getCategories(params: pQuery) {
-    // const url = `categories?page=${params?.page}&limit=${params?.limit}`;
     const url = `categories`;
+    // const url = `categories`;
     return axiosClient.get(url);
   },
   //    addStudent(payload) {
